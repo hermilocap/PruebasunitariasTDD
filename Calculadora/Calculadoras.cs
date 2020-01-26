@@ -11,10 +11,11 @@ namespace Calculadora
         const decimal porcentaje = 0.16m;
         public decimal ObtenerIva(decimal montoReserva)
         {
-            //const decimal porcentaje = 0.16m;
-            //decimal ivareserva = porcentaje * montoReserva;
-            //return ivareserva;
             return porcentaje * montoReserva;
+        }
+        public decimal ObtenerISH(decimal montoReserva, decimal porcentaje)
+        { 
+            return montoReserva * porcentaje;
         }
     }
 }
